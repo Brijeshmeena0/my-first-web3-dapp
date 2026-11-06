@@ -1,1 +1,108 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Web3 dApp</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b1020;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 22px;
+      background: #151d35;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 70px auto;
+      padding: 25px;
+    }
+
+    .card {
+      background: #17213b;
+      padding: 30px 20px;
+      border-radius: 18px;
+      border: 1px solid #344365;
+    }
+
+    h1 {
+      color: #72a7ff;
+    }
+
+    p {
+      color: #c3cce0;
+      line-height: 1.7;
+    }
+
+    button {
+      background: #635bff;
+      color: white;
+      padding: 14px 25px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    button:active {
+      transform: scale(0.97);
+    }
+
+    footer {
+      margin-top: 60px;
+      color: #8491aa;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>🚀 My First Web3 dApp</header>
+
+  <div class="container">
+    <div class="card">
+      <h1>Welcome to Web3!</h1>
+
+      <p>
+        My journey into Blockchain and
+        Decentralized Applications starts here.
+      </p>
+
+      <button onclick="startApp()">
+        Get Started
+      </button>
+
+      <p id="message"></p>
+    </div>
+
+    <footer>
+      Built by a Future Web3 Developer ❤️
+    </footer>
+  </div>
+
+  <script>
+    function startApp() {
+      document.getElementById("message").innerText =
+        "Congratulations! Your first dApp is working!";
+    }
+  </script>
+
+</body>
+</html>
+
